@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Web studio description meta tag content"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Web studio is effective solutions for your business</title>
+    <title>Web studio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -62,6 +60,76 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-button" data-menu-open>
+          <svg class="header-button-menu" width="33" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-menu-close" data-menu-close>
+          <svg class="mob-menu-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link current" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <div class="mob-menu-soc">
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-tel-link link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-email-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list list">
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a class="mob-icon-link link" href="">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -137,6 +205,7 @@
           <ul class="doing-list list">
             <li class="doing-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="web site development"
                 width="360"
@@ -145,6 +214,7 @@
             </li>
             <li class="doing-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="application development"
                 width="360"
@@ -153,6 +223,7 @@
             </li>
             <li class="doing-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="graphic design of mobile applications"
                 width="360"
@@ -169,6 +240,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -211,6 +283,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
                 src="./images/img5.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -253,6 +326,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
                 src="./images/img6.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -295,6 +369,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
                 src="./images/img7.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -542,5 +617,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
